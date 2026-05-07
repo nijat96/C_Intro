@@ -37,6 +37,9 @@ int main()
         }
     }
 
+    free(arr);
+    free(checked);
+
     return 0;
     
     

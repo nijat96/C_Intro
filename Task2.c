@@ -31,6 +31,8 @@ int main()
         }
     }
     printf("\"%s\" is Polindrome", text);
+
+    free(text);
     
     
     return 0;
