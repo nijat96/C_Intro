@@ -1,13 +1,11 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 int main() {
-    // Write C code here
    
    char* text;
-   char temperary;
+   char temperary; // temperary variable to store the value of text[i] during the swapping process
    int leng;
    
    text = malloc(100 * sizeof(char));
@@ -24,16 +22,14 @@ int main() {
    
    for(int i = 0; i < leng / 2; i++)
    {
-       temperary = text[i];
-       text[i] = text[leng - 1 - i];
-       text[leng - 1 - i] = temperary;
+       temperary = text[i]; // store the value of text[i] in temperary
+       text[i] = text[leng - 1 - i]; // assign the value of text[leng - 1 - i] to text[i]
+       text[leng - 1 - i] = temperary; // assign the value of temperary to text[leng - 1 - i]
    }
    
    printf("Reversed text: %s", text);
    
    free(text);
-
-   scanf("");
 
     return 0;
 }
